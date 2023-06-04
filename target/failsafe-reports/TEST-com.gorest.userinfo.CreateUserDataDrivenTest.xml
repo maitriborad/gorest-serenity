@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.gorest.userinfo.CreateUserDataDrivenTest" time="227.149" tests="100" errors="0" skipped="0" failures="6">
+  <properties>
+    <property name="idea.version" value="2022.3.2"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\milan\IdeaProjects\gorest-serenity"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\milan\IdeaProjects\gorest-serenity"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\milan\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Program Files\Apache\apache-maven-3.9.1\bin;C:\Program Files\nodejs\;C:\Users\milan\AppData\Local\Microsoft\WindowsApps;C:\Users\milan\AppData\Roaming\npm;."/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\plugins\maven\lib\maven3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\milan"/>
+    <property name="user.timezone" value="UTC"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Hardy097"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds.license;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_121\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.3.2 clean verify serenity:aggregate"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="createMultipleUsers[15]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="17.492"/>
+  <testcase name="createMultipleUsers[24]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="17.494"/>
+  <testcase name="createMultipleUsers[57]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="17.494"/>
+  <testcase name="createMultipleUsers[22]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="17.494"/>
+  <testcase name="createMultipleUsers[1]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="17.494"/>
+  <testcase name="createMultipleUsers[46]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0"/>
+  <testcase name="createMultipleUsers[0]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.001"/>
+  <testcase name="createMultipleUsers[53]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.001"/>
+  <testcase name="createMultipleUsers[14]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.001"/>
+  <testcase name="createMultipleUsers[13]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.014"/>
+  <testcase name="createMultipleUsers[35]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.179"/>
+  <testcase name="createMultipleUsers[54]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.091"/>
+  <testcase name="createMultipleUsers[50]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.003"/>
+  <testcase name="createMultipleUsers[30]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.01"/>
+  <testcase name="createMultipleUsers[21]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.005">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;422&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <422>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$14.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+	at io.restassured.specification.ResponseSpecification$statusCode$65.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at com.gorest.userinfo.CreateUserDataDrivenTest.createMultipleUsers(CreateUserDataDrivenTest.java:25)
+]]></failure>
+    <system-err><![CDATA[22509 [CreateUserDataDrivenTest-2-thread-31] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Data Driven Test for adding multiple users to the application
+----------------------------------------------------------------------------
+22513 [CreateUserDataDrivenTest-2-thread-31] INFO net.serenitybdd.core.Serenity - Test Suite Started: Create user data driven test
+22514 [CreateUserDataDrivenTest-2-thread-31] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: createMultipleUsers[77]
+-------------------------------------------------------------------
+22514 [CreateUserDataDrivenTest-2-thread-31] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 78
+]]></system-err>
+  </testcase>
+  <testcase name="createMultipleUsers[38]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.071"/>
+  <testcase name="createMultipleUsers[68]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.001"/>
+  <testcase name="createMultipleUsers[12]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.059"/>
+  <testcase name="createMultipleUsers[47]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.627"/>
+  <testcase name="createMultipleUsers[51]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.628"/>
+  <testcase name="createMultipleUsers[60]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.628"/>
+  <testcase name="createMultipleUsers[64]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.628">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;422&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <422>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$14.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)
+	at sun.reflect.GeneratedMethodAccessor963.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+	at io.restassured.specification.ResponseSpecification$statusCode$65.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at com.gorest.userinfo.CreateUserDataDrivenTest.createMultipleUsers(CreateUserDataDrivenTest.java:25)
+]]></failure>
+    <system-err><![CDATA[23320 [CreateUserDataDrivenTest-2-thread-61] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Data Driven Test for adding multiple users to the application
+----------------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="createMultipleUsers[16]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.628"/>
+  <testcase name="createMultipleUsers[11]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.634">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;422&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <422>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$14.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)
+	at sun.reflect.GeneratedMethodAccessor963.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+	at io.restassured.specification.ResponseSpecification$statusCode$65.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at com.gorest.userinfo.CreateUserDataDrivenTest.createMultipleUsers(CreateUserDataDrivenTest.java:25)
+]]></failure>
+    <system-err><![CDATA[23322 [CreateUserDataDrivenTest-2-thread-17] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Data Driven Test for adding multiple users to the application
+----------------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="createMultipleUsers[72]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.634"/>
+  <testcase name="createMultipleUsers[74]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.634"/>
+  <testcase name="createMultipleUsers[28]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.637"/>
+  <testcase name="createMultipleUsers[66]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.118"/>
+  <testcase name="createMultipleUsers[77]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.006"/>
+  <testcase name="createMultipleUsers[79]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.056"/>
+  <testcase name="createMultipleUsers[80]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.007"/>
+  <testcase name="createMultipleUsers[76]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.026"/>
+  <testcase name="createMultipleUsers[67]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.026">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;422&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <422>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$14.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)
+	at sun.reflect.GeneratedMethodAccessor963.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+	at io.restassured.specification.ResponseSpecification$statusCode$65.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at com.gorest.userinfo.CreateUserDataDrivenTest.createMultipleUsers(CreateUserDataDrivenTest.java:25)
+]]></failure>
+    <system-err><![CDATA[23639 [CreateUserDataDrivenTest-2-thread-51] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Data Driven Test for adding multiple users to the application
+----------------------------------------------------------------------------
+23643 [CreateUserDataDrivenTest-2-thread-51] INFO net.serenitybdd.core.Serenity - Test Suite Started: Create user data driven test
+23644 [CreateUserDataDrivenTest-2-thread-51] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: createMultipleUsers[95]
+-------------------------------------------------------------------
+23644 [CreateUserDataDrivenTest-2-thread-51] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 96
+]]></system-err>
+  </testcase>
+  <testcase name="createMultipleUsers[78]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.093"/>
+  <testcase name="createMultipleUsers[75]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.11"/>
+  <testcase name="createMultipleUsers[85]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.035"/>
+  <testcase name="createMultipleUsers[88]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.001"/>
+  <testcase name="createMultipleUsers[84]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.012"/>
+  <testcase name="createMultipleUsers[71]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.018"/>
+  <testcase name="createMultipleUsers[73]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.025"/>
+  <testcase name="createMultipleUsers[89]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.317"/>
+  <testcase name="createMultipleUsers[70]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.368"/>
+  <testcase name="createMultipleUsers[86]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.39"/>
+  <testcase name="createMultipleUsers[69]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.436"/>
+  <testcase name="createMultipleUsers[87]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.461"/>
+  <testcase name="createMultipleUsers[92]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.494"/>
+  <testcase name="createMultipleUsers[98]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.538"/>
+  <testcase name="createMultipleUsers[95]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.708"/>
+  <testcase name="createMultipleUsers[97]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.818"/>
+  <testcase name="createMultipleUsers[94]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.883"/>
+  <testcase name="createMultipleUsers[90]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.929"/>
+  <testcase name="createMultipleUsers[81]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.947"/>
+  <testcase name="createMultipleUsers[99]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="0.978"/>
+  <testcase name="createMultipleUsers[82]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="1"/>
+  <testcase name="createMultipleUsers[83]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="1.032"/>
+  <testcase name="createMultipleUsers[96]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="1.529"/>
+  <testcase name="createMultipleUsers[93]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="1.53">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;422&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <422>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$14.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)
+	at sun.reflect.GeneratedMethodAccessor963.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+	at io.restassured.specification.ResponseSpecification$statusCode$65.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at com.gorest.userinfo.CreateUserDataDrivenTest.createMultipleUsers(CreateUserDataDrivenTest.java:25)
+]]></failure>
+  </testcase>
+  <testcase name="createMultipleUsers[91]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="1.533"/>
+  <testcase name="createMultipleUsers[39]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="1.536"/>
+  <testcase name="createMultipleUsers[44]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="1.537"/>
+  <testcase name="createMultipleUsers[31]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="1.732"/>
+  <testcase name="createMultipleUsers[6]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="1.777"/>
+  <testcase name="createMultipleUsers[45]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="1.793"/>
+  <testcase name="createMultipleUsers[18]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="1.801"/>
+  <testcase name="createMultipleUsers[40]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.147"/>
+  <testcase name="createMultipleUsers[8]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.147"/>
+  <testcase name="createMultipleUsers[41]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.147"/>
+  <testcase name="createMultipleUsers[63]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.147"/>
+  <testcase name="createMultipleUsers[42]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.147"/>
+  <testcase name="createMultipleUsers[49]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.249"/>
+  <testcase name="createMultipleUsers[43]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.295"/>
+  <testcase name="createMultipleUsers[23]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.325"/>
+  <testcase name="createMultipleUsers[17]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.365"/>
+  <testcase name="createMultipleUsers[48]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.553"/>
+  <testcase name="createMultipleUsers[37]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.554"/>
+  <testcase name="createMultipleUsers[32]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.562"/>
+  <testcase name="createMultipleUsers[10]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.607"/>
+  <testcase name="createMultipleUsers[4]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.685"/>
+  <testcase name="createMultipleUsers[20]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.731"/>
+  <testcase name="createMultipleUsers[62]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.799"/>
+  <testcase name="createMultipleUsers[59]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.806"/>
+  <testcase name="createMultipleUsers[19]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.891"/>
+  <testcase name="createMultipleUsers[27]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.968"/>
+  <testcase name="createMultipleUsers[36]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="2.999"/>
+  <testcase name="createMultipleUsers[29]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="3.058"/>
+  <testcase name="createMultipleUsers[26]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="3.069"/>
+  <testcase name="createMultipleUsers[61]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="3.37"/>
+  <testcase name="createMultipleUsers[3]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="3.37"/>
+  <testcase name="createMultipleUsers[55]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="3.372">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;201&gt; but was &lt;422&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <422>.
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$14.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)
+	at sun.reflect.GeneratedMethodAccessor963.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+	at io.restassured.specification.ResponseSpecification$statusCode$65.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at com.gorest.userinfo.CreateUserDataDrivenTest.createMultipleUsers(CreateUserDataDrivenTest.java:25)
+]]></failure>
+    <system-err><![CDATA[27308 [CreateUserDataDrivenTest-2-thread-62] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Data Driven Test for adding multiple users to the application
+----------------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="createMultipleUsers[25]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="3.391"/>
+  <testcase name="createMultipleUsers[56]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="3.392"/>
+  <testcase name="createMultipleUsers[7]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="3.403"/>
+  <testcase name="createMultipleUsers[9]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="3.42"/>
+  <testcase name="createMultipleUsers[58]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="3.676"/>
+  <testcase name="createMultipleUsers[2]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="3.676"/>
+  <testcase name="createMultipleUsers[34]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="3.747"/>
+  <testcase name="createMultipleUsers[33]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="3.811"/>
+  <testcase name="createMultipleUsers[65]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="4.294"/>
+  <testcase name="createMultipleUsers[52]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="4.296"/>
+  <testcase name="createMultipleUsers[5]" classname="com.gorest.userinfo.CreateUserDataDrivenTest" time="4.498"/>
+</testsuite>

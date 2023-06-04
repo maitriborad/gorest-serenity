@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Create user data driven test","Data Driven Test for adding multiple users to the application","FAILURE","2023-06-04T18:13:20.064Z[UTC]","0.0","1376.48"
+"User CURD test with steps","This will create a new User","SUCCESS","2023-06-04T18:13:27.397Z[UTC]","0.0","0.95"
+"User CURD test with steps","Verify if the User is added to application","SUCCESS","2023-06-04T18:13:28.346Z[UTC]","0.0","0.72"
+"User CURD test with steps","Update the student information and verify the updated information","SUCCESS","2023-06-04T18:13:29.064Z[UTC]","0.0","1.23"
+"User CURD test with steps","This will delete student and verify that student is deleted","SUCCESS","2023-06-04T18:13:30.294Z[UTC]","0.0","0.9"
